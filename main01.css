@@ -1,0 +1,20 @@
+body{background-color: #000;}
+ul, li{list-style: none;font-size: 1rem;}
+section {display: flex;flex-direction: row; width:auto; min-height: 100%;}
+
+.left{font-family: 'Libre Franklin', sans-serif; font-size: 2rem;color:#fff;font-weight: 600;display:
+flex;flex-direction: column;width:50vw;padding: 0 2%;}
+.line{width:100%;height: 1.5px; background: #fff;margin: 10px auto;}
+
+.services>p, .contact>p{font-size:1rem;line-height: .5;}
+p.title{font-family: 'Libre Baskerville', serif;font-weight: 400; font-style: italic;font-size: 1.5rem;}
+.right{height: 100%;width:50%;}
+.slide {height: 100%;}
+.slide div img{width:100%;height:100%;object-fit: cover;object-position: center;}
+
+@media (max-width: 1080px) {
+  section {flex-direction: column;}
+  .left{width:95vw;}
+  .right{width:95%;}
+  .slide{margin: 2% 2%;}
+}
